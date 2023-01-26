@@ -1,0 +1,18 @@
+{
+    "name": "com.postegames.hashedstring.editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e0f58bfe6a703f24a85f9333758706b6"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

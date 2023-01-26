@@ -1,0 +1,21 @@
+{
+  "name": "com.postegames.hashedstring",
+  "version": "1.0.0",
+  "displayName": "PEGLIB - Hashed String",
+  "description": "A datatype for generating hashed integers from a string that can be viewed and edited in the Inspector.",
+  "unity": "2022.2",
+  "dependencies": {
+  },
+  "keywords": [
+    "library",
+    "toolbox",
+    "utility",
+    "hashing",
+    "string"
+  ],
+  "author": {
+    "name": "Sluggy",
+    "email": "jcsluggy@gmail.com",
+    "url": "http:/postegames.com"
+  }
+}
