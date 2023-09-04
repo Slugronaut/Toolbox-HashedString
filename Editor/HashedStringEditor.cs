@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Toolbox.ToolboxEditor
+namespace Peg.ToolboxEditor
 {
     /// <summary>
     /// Draws a HasheString as a text field and a label that displays the resulting hash.

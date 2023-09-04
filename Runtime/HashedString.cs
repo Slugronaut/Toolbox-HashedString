@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Toolbox
+namespace Peg
 {
     /// <summary>
     /// A datatype that represents a string and its associated hash value.
