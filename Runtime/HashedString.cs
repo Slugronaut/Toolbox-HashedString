@@ -32,6 +32,8 @@ namespace Peg
             get { return string.IsNullOrEmpty(Value); }
         }
 
+        [Sirenix.OdinInspector.ShowInInspector]
+        [Sirenix.OdinInspector.ReadOnly]
         public int Hash
         {
             get

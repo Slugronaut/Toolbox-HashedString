@@ -16,28 +16,26 @@ namespace Peg.ToolboxEditor
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            Rect r = position;
-            r.height /= 2;
             EditorGUI.BeginProperty(position, label, property);
-            var prop = property.FindPropertyRelative("_Value");
-            string value = prop.stringValue;
 
+            var valueProperty = property.FindPropertyRelative("_Value");
+            string value = valueProperty.stringValue;
 
-            Rect first = r;
-            r.height -= EditorGUIUtility.standardVerticalSpacing;
-            value = EditorGUI.TextField(first, label, value);
-            prop.stringValue = value;
+            Rect firstLine = EditorGUI.PrefixLabel(position, label);
+            firstLine.height = EditorGUIUtility.singleLineHeight;
 
+            EditorGUI.PropertyField(firstLine, valueProperty, GUIContent.none);
+
+            Rect secondLine = firstLine;
+            secondLine.y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
 
             EditorGUI.BeginDisabledGroup(true);
-            Rect second = r;
-            second.position = new Vector2(r.position.x, r.position.y + r.height);
-            EditorGUI.TextField(second, "Hashed Value", HashedString.StringToHash(value).ToString());
+            EditorGUI.TextField(secondLine, "Hashed Value", HashedString.StringToHash(value).ToString());
             EditorGUI.EndDisabledGroup();
 
             EditorGUI.EndProperty();
         }
-    }
 
+    }
 
 }
